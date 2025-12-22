@@ -28,7 +28,9 @@ const Header = () => {
         {showDropDown && (
           <div className="absolute right-0 mt-2 w-80 bg-white border rounded shadow-lg z-50">
             <div className="p-4">
-              <h2 className="font-semibold text-lg mb-2">Cart items</h2>
+              <h2 className="font-semibold text-lg mb-2">
+                Cart items you have choice
+              </h2>
               {cart.length === 0 ? (
                 <p className="text-gray-500 text-sm">Your cart is empty</p>
               ) : (
