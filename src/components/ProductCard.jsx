@@ -14,7 +14,7 @@ const ProductCard = ({ product }) => {
       <p className="font-bold text-lg">${product.price.toFixed(2)}</p>
       <div
         onClick={() => addToCart(product)}
-        className="bg-blue-600 text-white mt-3 px-4 py-2 rounded transition hover:bg-blue-700"
+        className="bg-blue-600 text-white mt-3 px-4 py-2 rounded transition hover:bg-blue-700 cursor-pointer"
       >
         Add to cart
       </div>

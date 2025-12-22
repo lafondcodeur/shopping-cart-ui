@@ -16,7 +16,7 @@ export function CartProvider({ children }) {
           item.id === product.id ? { ...item, qty: item.qty + 1 } : item
         );
       }
-      // Si le produit n'existe pas : l'ajoute avec qty=1
+      // Si le produit n'existe pas : l'ajouter avec qty=1
       return [...prev, { ...product, qty: 1 }];
     });
   };
