@@ -37,22 +37,22 @@ src/
 ---
 ## Principes respectés
 
--Séparation des responsabilités
--État global minimal
--Logique métier centralisée
--Immutabilité de l’état
--Hooks personnalisés
--Code scalable et maintenable
+-  Séparation des responsabilités
+-  État global minimal
+-  Logique métier centralisée
+-  Immutabilité de l’état
+-  Hooks personnalisés
+-  Code scalable et maintenable
 
 
 ---
 ## Gestion du panier (Context API)
 
--Le panier est géré via un CartContext qui expose :
--cart → état global
--addToCart(product)
--removeFromCart(id)
--clearCart()
+-  Le panier est géré via un CartContext qui expose :
+-  cart → état global
+-  addToCart(product)
+-  removeFromCart(id)
+-  clearCart()
 
 Accessible dans n’importe quel composant via :
 ```bash
@@ -62,11 +62,11 @@ const { cart, addToCart } = useCart();
 ---
 ##  Stack technique
 
--React
--Context API
--Tailwind CSS
--React Icons
--JavaScript (ES6+)
+-  React
+-  Context API
+-  Tailwind CSS
+-  React Icons
+-  JavaScript (ES6+)
 
 ---
 
@@ -82,8 +82,8 @@ npm run dev
 ---
 ##  Bonnes pratiques Git
 
--Conventional Commits
--Pull Requests obligatoires
--Code review
--Changelog maintenu
--Branches par fonctionnalité
+-  Conventional Commits
+-  Pull Requests obligatoires
+-  Code review
+-  Changelog maintenu
+-  Branches par fonctionnalité
