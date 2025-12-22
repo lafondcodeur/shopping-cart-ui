@@ -3,7 +3,7 @@ import { useCart } from "../context/CartContext";
 import { useState } from "react";
 
 const Header = () => {
-  const { cart } = useCart();
+  const { cart, removeFromCart, clearCart } = useCart();
   const [showDropDown, setShowDropDown] = useState(false);
   const itemCount = cart.reduce((acc, item) => acc + item.qty, 0);
   const total = cart
@@ -29,7 +29,7 @@ const Header = () => {
           <div className="absolute right-0 mt-2 w-80 bg-white border rounded shadow-lg z-50">
             <div className="p-4">
               <h2 className="font-semibold text-lg mb-2">
-                Cart items you have choice
+                Cart items you have
               </h2>
               {cart.length === 0 ? (
                 <p className="text-gray-500 text-sm">Your cart is empty</p>
@@ -47,6 +47,12 @@ const Header = () => {
                             {item.qty} x {item.price}
                           </p>
                         </div>
+                        <button
+                          onClick={() => removeFromCart(item.id)}
+                          className=" cursor-pointer text-sm text-red-600"
+                        >
+                          Remove
+                        </button>
                       </li>
                     ))}
                   </ul>
@@ -54,6 +60,12 @@ const Header = () => {
                     <span>Total</span>
                     <span>{total}</span>
                   </div>
+                  <button
+                    onClick={() => clearCart()}
+                    className="cursor-pointer mt-3 w-full bg-red-500 text-white py-1 transition hover:bg-red-600 rounded "
+                  >
+                    Clear Cart
+                  </button>
                 </>
               )}
             </div>
