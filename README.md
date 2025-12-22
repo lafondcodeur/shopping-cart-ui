@@ -32,6 +32,7 @@ src/
 │   └── Home.jsx
 ├── App.jsx
 └── main.jsx
+```text
 
 ---
 ## 🔑Principes respectés
@@ -43,7 +44,7 @@ src/
 -Hooks personnalisés
 -Code scalable et maintenable
 
-``` 
+
 ---
 ## Gestion du panier (Context API)
 
