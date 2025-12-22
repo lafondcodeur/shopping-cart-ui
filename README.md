@@ -6,7 +6,7 @@ Shop Mate est une application e-commerce moderne construite avec **React**, mett
 
 ---
 
-## 🚀 Fonctionnalités principales
+## Fonctionnalités principales
 
 - 🛍️ Gestion globale du panier (Context API)
 - ➕ Ajout de produits avec gestion des quantités
@@ -32,4 +32,23 @@ src/
 │   └── Home.jsx
 ├── App.jsx
 └── main.jsx
+
+---
+## 🔑Principes respectés
+
+-Séparation des responsabilités
+-État global minimal
+-Logique métier centralisée
+-Immutabilité de l’état
+-Hooks personnalisés
+-Code scalable et maintenable
+
+---
+## Gestion du panier (Context API)
+
+-Le panier est géré via un CartContext qui expose :
+-cart → état global
+-addToCart(product)
+-removeFromCart(id)
+-clearCart()
 
