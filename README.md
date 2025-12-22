@@ -43,6 +43,7 @@ src/
 -Hooks personnalisés
 -Code scalable et maintenable
 
+``` 
 ---
 ## Gestion du panier (Context API)
 
