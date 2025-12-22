@@ -35,7 +35,7 @@ src/
 ```
 
 ---
-## 🔑Principes respectés
+## Principes respectés
 
 -Séparation des responsabilités
 -État global minimal
@@ -60,7 +60,7 @@ const { cart, addToCart } = useCart();
 ```
 
 ---
-## 🛠️ Stack technique
+##  Stack technique
 
 -React
 -Context API
