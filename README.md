@@ -8,20 +8,20 @@ Shop Mate est une application e-commerce moderne construite avec **React**, mett
 
 ## Fonctionnalités principales
 
-- 🛍️ Gestion globale du panier (Context API)
-- ➕ Ajout de produits avec gestion des quantités
-- ❌ Suppression de produits du panier
-- 🧹 Réinitialisation complète du panier
-- 🧮 Calcul automatique du nombre d’articles
-- 💰 Calcul dynamique du total
-- 🧾 Dropdown panier interactif dans le header
-- 🎨 UI responsive avec Tailwind CSS
+-  Gestion globale du panier (Context API)
+-  Ajout de produits avec gestion des quantités
+-  Suppression de produits du panier
+-  Réinitialisation complète du panier
+-  Calcul automatique du nombre d’articles
+-  Calcul dynamique du total
+-  Dropdown panier interactif dans le header
+-  UI responsive avec Tailwind CSS
 
 ---
 
 ## 🧱 Architecture
 
-```text
+```bash
 src/
 ├── components/
 │   ├── Header.jsx
@@ -32,7 +32,7 @@ src/
 │   └── Home.jsx
 ├── App.jsx
 └── main.jsx
-```text
+```
 
 ---
 ## 🔑Principes respectés
@@ -54,3 +54,36 @@ src/
 -removeFromCart(id)
 -clearCart()
 
+Accessible dans n’importe quel composant via :
+```bash
+const { cart, addToCart } = useCart();
+```
+
+---
+## 🛠️ Stack technique
+
+-React
+-Context API
+-Tailwind CSS
+-React Icons
+-JavaScript (ES6+)
+
+---
+
+## 📦 Installation
+```bash
+git clone https://github.com/username/shop-mate.git
+cd shop-mate
+npm install
+npm run dev
+```
+
+
+---
+##  Bonnes pratiques Git
+
+-Conventional Commits
+-Pull Requests obligatoires
+-Code review
+-Changelog maintenu
+-Branches par fonctionnalité
